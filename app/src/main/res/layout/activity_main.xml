@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearTop"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20sp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:background="@drawable/buttonbackround"
+            android:text="-"
+            android:textSize="25sp"
+            android:id="@+id/buttonMinus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="a"
+            android:id="@+id/textViewGuess"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:background="@drawable/buttonbackround"
+            android:text="+"
+            android:textSize="25sp"
+            android:id="@+id/buttonPlus"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearTop"
+        android:layout_centerInParent="true"
+        android:text="Tippel"
+        android:id="@+id/buttonTipp"/>
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="500sp"
+        android:src="@drawable/akasztofa00"
+        android:layout_below="@+id/linearTop"
+        android:layout_margin="50sp"
+        android:id="@+id/imageViewFail"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text=" "
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:id="@+id/textViewCorrect"
+        android:letterSpacing="0.5"/>
+
+
+
+</RelativeLayout>
